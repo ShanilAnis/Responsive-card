@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(./Nunito_Sans/NunitoSans-Black.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: linear-gradient(whitesmoke, #475569);
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans";
+    font-weight: 300;
+    text-align: center;
+}
+
+.nav_bar{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#teacher , #coder , #designer{
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 5%;
+    background-color: hsla(0, 2%, 76%, 0.83);
+}
+#teacher{
+    margin: 0 15px;
+}
+
+img{
+    border-radius: 50%;
+    padding: 0.5rem;
+    max-width: 100%;
+    display: block;
+}
+
+.heading{
+    background-color: #475569;
+    border: 2px solid black;
+    color: white;
+}
+figcaption{
+    padding: 0.2rem;
+}
+
+header, footer{
+    position: sticky;
+    background-color: #475569;
+    color: whitesmoke;
+}
+/* Utility Classes */
+
+.nowrap{
+    white-space: nowrap;
+}
+
+@media screen and (max-width : 720px) {
+    .nav_bar{
+        display: flex;
+        justify-content: space-evenly;
+        color: black;
+        padding: 0.5rem;
+        
+    }
+
+    h3{
+        font-size:2em;
+    }
+
+    
+    .container{
+        flex-direction: column-reverse;
+        padding: 25px 0 50px 0;
+        flex-grow: 1;
+        flex-wrap: wrap;
+
+
+    }
+    #teacher{
+        margin: 20px 0;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+
+    figcaption{
+        font-size: 0.8rem;
+    }
+
+
+    .heading{
+        font-size: 800;
+        font-weight: 700;
+        /* margin-bottom: 1%; */
+    }
+
+    .fixed{
+        position: sticky;
+        top: 0;
+        border: 2px solid black;
+    }
+
+    .design{
+        padding: 0 15%;
+    }
+
+    .footer{
+        position: sticky;
+        bottom: 0;
+        
+    }
+
+}
+
