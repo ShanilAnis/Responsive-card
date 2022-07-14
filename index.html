@@ -10,40 +10,42 @@
 </head>
 
 <body>
-    <div  class="fixed">
         <header class="heading">
-            <h3>Our Staff</h3>
+            <h1>Our Staff</h1>
+            <nav>
+                <a href="#profile1">Joe</a>
+                <a href="#profile2">Matt</a>
+                <a href="#profile3">Jane</a>
+            </nav>
         </header>
 
-        <nav class="nav_bar">
-            <a href="#coder">Joe</a>
-            <a href="#designer" class="design">Matt</a>
-            <a href="#teacher">Jane</a>
-        </nav>
-    </div>
-    <main class="container">
-        <section id="designer">
-            <h4>Matt Designer</h4>
-            <figure>
-                <img src="./img/profile1-500x500.png" alt="Matt designer" width="300px" height="300px">
-                <figcaption>"I Design Stuff"</figcaption>
-            </figure>
-        </section>
-        <section id="teacher">
-            <h4> <span class="nowrap">jane Dev Rel</span></h4>
-            <img src="./img/profile3-500x500.png" alt="Jane" width="300px" height="300px">
-            <figcaption>"I teach stuff"</figcaption>
-        </section>
-        <section id="coder">
-            <h4>Joe Coder</h4>
-            <img src="./img/profile2-500x500.png" alt="Joe" width="300px" height="300px">
-            <figcaption>"I code stuff"</figcaption>
-        </section>
-    </main>
+        <main>
+            <article id="profile1" class="card">
+                <figure>
+                    <img src="./img/profile1-500x500.png" alt="Joe Coder" width="500px" height="500px">
+                    <figcaption> Joe Coder</figcaption>
+                </figure>
+                <p><q>I code stuff</q></p>
+            </article>
+            <article id="profile2" class="card">
+                <figure>
+                    <img src="./img/profile2-500x500.png" alt="Matt Designer" width="500px" height="500px">
+                    <figcaption>Matt Designer</figcaption>
+                </figure>
+                <p><q>I design stuff</q></p>
+            </article>
+            <article id="profile3" class="card">
+                <figure>
+                    <img src="./img/profile3-500x500.png" alt="Jone" width="500px" height="500">
+                    <figcaption> Jane <span class="nowrap">Dev Rel </span></figcaption>
+                </figure>
+                <p><q>I teach stuff</q></p>
+            </article>
+        </main>
 
-    <footer class="footer">
-        <p>&copy Acme Co.</p>
-    </footer>
+        <footer>
+            <p>&copy; Acme.Co</p>
+        </footer>
 </body>
 
 </html>
